@@ -5,29 +5,29 @@ A professional delivery management system designed for camera retail businesses,
 
 ## Key Features
 
-### 🔐 Authentication & Authorization
+### Authentication & Authorization
 - Username/password authentication via Supabase Auth
 - Role-based access control (Creator, Runner, Approver, Admin)
 - Protected routes based on user roles
 
-### 📦 Delivery Management
+### Delivery Management
 - **Create**: Delivery creators can create new delivery assignments with destination, purpose, and remarks
 - **Claim**: Runners can browse and claim available (unassigned) deliveries
 - **Track**: Real-time status tracking through the delivery lifecycle
 - **Approve**: Approvers verify and finalize completed deliveries
 
-### 📊 Dashboard & Reporting
+### Dashboard & Reporting
 - Interactive statistics dashboard with clickable status cards
 - Multi-filter support (month, runner, status)
 - Delivery table with sorting and filtering
 - Export capabilities via XLSX
 
-### 👥 User Management (Admin)
+### User Management (Admin)
 - View all users with roles, delivery counts, and account details
 - Delete user accounts with cascading cleanup
 - Role assignment and management
 
-### 📱 Responsive Design
+### Responsive Design
 - Mobile-optimized interface with adaptive navigation
 - Touch-friendly delivery cards and actions
 
