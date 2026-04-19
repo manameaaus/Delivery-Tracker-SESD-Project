@@ -1,4 +1,4 @@
-# 📦 Future Forward Delivery Tracker
+# Future Forward Delivery Tracker
 
 A full-stack delivery management platform built for **Future Forward**, enabling end-to-end tracking of deliveries across multiple roles — from creation to approval.
 
@@ -12,6 +12,13 @@ The system supports four distinct roles, each with a tailored dashboard experien
 | **Delivery Creator** | Create new delivery tasks, track delivery progress |
 | **Runner** | Claim & fulfill deliveries, log distance traveled (km) |
 | **Approver** | Review completed deliveries, approve or reject them |
+
+### Dummy Accounts
+**Admin** - username: admin@ff.com | password: admin
+**Creator** - username: creator@ff.com | password: creator
+**Approver** - username: approver@ff.com | password: approver
+**Runner** - username: runner@ff.com | password: runner
+**Runner2** - username: runner2@ff.com | password: runner2
 
 ### Delivery Workflow
 
