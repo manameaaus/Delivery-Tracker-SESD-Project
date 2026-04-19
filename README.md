@@ -1,19 +1,45 @@
-# Delivery Tracker
+# 📦 Future Forward Delivery Tracker
 
-This repository contains a backend-first delivery tracking system with a Supabase-backed Express API in `backend/` and a React client in `frontend/`.
+A full-stack delivery management platform built for **Future Forward**, enabling end-to-end tracking of deliveries across multiple roles — from creation to approval.
 
-## Structure
+## Overview
 
-- `backend/`: TypeScript API using controllers, services, repositories, domain entities, and Supabase integrations
-- `frontend/`: React + Vite dashboard for authentication, delivery workflow actions, reporting, and admin user management
-- `backend/supabase/schema.sql`: database schema, triggers, roles, and row-level policies
+The system supports four distinct roles, each with a tailored dashboard experience:
 
-## Run
+| Role | Capabilities |
+|---|---|
+| **Admin** | View platform-wide statistics, monitor all runner performance (deliveries & distance covered) |
+| **Delivery Creator** | Create new delivery tasks, track delivery progress |
+| **Runner** | Claim & fulfill deliveries, log distance traveled (km) |
+| **Approver** | Review completed deliveries, approve or reject them |
 
-1. Add environment variables from `backend/.env.example` and `frontend/.env.example`
-2. Install dependencies in the workspace root
-3. Run the backend and frontend separately
+### Delivery Workflow
 
-## Core Workflow
+```
+Unassigned → Assigned → In Progress → Delivered → Approved / Rejected
+```
 
-`Unassigned -> Assigned -> In Progress -> Delivered -> Completed`
+## Tech Stack
+
+- **Frontend**: React 19, TypeScript, Vite
+- **Backend**: Express.js, TypeScript (Clean Architecture)
+- **Database & Auth**: Supabase (PostgreSQL + Row Level Security)
+- **Hosting**: Vercel (Frontend & Backend)
+
+## Project Structure
+
+```
+├── backend/
+│   ├── src/
+│   │   ├── domain/          # Entities, enums, errors
+│   │   ├── application/     # Services, DTOs, interfaces
+│   │   ├── infrastructure/  # Supabase repositories
+│   │   └── presentation/    # Controllers, routes, middleware
+│   └── supabase/            # SQL schema & RLS policies
+├── frontend/
+│   └── src/
+│       ├── api/             # API client
+│       ├── components/      # LoginScreen, Dashboard
+│       ├── context/         # Auth context provider
+│       └── styles/          # Global CSS
+```
