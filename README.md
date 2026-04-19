@@ -14,11 +14,14 @@ The system supports four distinct roles, each with a tailored dashboard experien
 | **Approver** | Review completed deliveries, approve or reject them |
 
 ### Dummy Accounts
-**Admin** - username: admin@ff.com | password: admin
-**Creator** - username: creator@ff.com | password: creator
-**Approver** - username: approver@ff.com | password: approver
-**Runner** - username: runner@ff.com | password: runner
-**Runner2** - username: runner2@ff.com | password: runner2
+
+| Role | Username | Password |
+|------|----------|----------|
+| Admin | `admin@ff.com` | `admin` |
+| Creator | `creator@ff.com` | `creator` |
+| Approver | `approver@ff.com` | `approver` |
+| Runner | `runner@ff.com` | `runner` |
+| Runner 2 | `runner2@ff.com` | `runner2` |
 
 ### Delivery Workflow
 
